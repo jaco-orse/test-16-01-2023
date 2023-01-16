@@ -22,7 +22,7 @@
         <tr>
             <td>${progetto.getName()}</td>
             <td>${progetto.getDescription()}</td>
-            <td>${progetto.getLink()}</td>
+            <td><a href="${progetto.getLink()}" terget="_black">link</a></td>
         </tr>
     </c:forEach>
     </tbody>
