@@ -15,9 +15,18 @@
                     <a class="nav-link active" aria-current="page" href="/progetti">progetti</a>
                 </li>
 
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/skills/all">SKILLS SETTING</a>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="/skills/all">SKILLS SETTING</a></li>
+                        <li><a class="dropdown-item" href="/progetti/all">PROGETTI SETTING</a></li>
+
+                    </ul>
                 </li>
+
+               
 
             </ul>
         </div>
