@@ -25,7 +25,7 @@ public class homeController {
     @GetMapping(path = {"/", "/home"})
     public ModelAndView home() {
         ModelAndView currentView = new ModelAndView("/home.jsp");
-        List<Categoria> categorie = categoriaBO.getAll();
+        List<Categoria> categorie = categoriaBO.getCatWithSkill();
         currentView.addObject("categorie",categorie);
         return currentView;
     }
