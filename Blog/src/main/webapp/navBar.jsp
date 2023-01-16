@@ -9,10 +9,14 @@
                     <a class="nav-link active" aria-current="page" href="/">home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/skills">skills</a>
+                    <a class="nav-link active" aria-current="page" href="/skills/all">skills</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/progetti">progetti</a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/skills/all">SKILLS SETTING</a>
                 </li>
 
             </ul>
