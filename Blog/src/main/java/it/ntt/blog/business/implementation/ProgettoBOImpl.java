@@ -16,4 +16,26 @@ public class ProgettoBOImpl implements ProgettoBO {
     public List<Progetto> getAll(){
         return progettoRepository.findAll();
     }
+
+    public void insertProgetto(String name,String desription,String link){
+        Progetto newProg = new Progetto();
+        newProg.setName(name);
+        newProg.setDescription(desription);
+        newProg.setLink(link);
+        progettoRepository.save(newProg);
+        return;
+    }
+
+    public void deleteProgetto(Long id){
+        progettoRepository.deleteById(id);
+    }
+
+    public void updateProgetto(Long id,String name,String description,String link){
+        Progetto currP = progettoRepository.findById(id).orElseThrow();
+        currP.setName(name);
+        currP.setDescription(description);
+        currP.setLink(link);
+        progettoRepository.save(currP);
+        return;
+    }
 }
