@@ -16,7 +16,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
-@RequestMapping("/progetti")
+@RequestMapping("/admin/progetti")
 public class ProgettoController {
 
     @Autowired

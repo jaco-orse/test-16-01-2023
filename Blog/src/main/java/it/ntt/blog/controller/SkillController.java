@@ -15,7 +15,7 @@ import org.springframework.web.servlet.ModelAndView;
 import java.util.List;
 
 @Controller
-@RequestMapping("/skills")
+@RequestMapping("/admin/skills")
 public class SkillController {
 
     @Autowired
