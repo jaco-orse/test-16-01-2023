@@ -22,7 +22,12 @@ class SecurityConfig {
                 .roles("USER")
                 .build();
 
-        return new InMemoryUserDetailsManager(user);
+        UserDetails admin = User.withUsername("admin")
+                .password(passwordEncoder.encode("password"))
+                .roles("ADMIN")
+                .build();
+
+        return new InMemoryUserDetailsManager(user,admin);
     }
 
     @Bean
@@ -44,8 +49,10 @@ class SecurityConfig {
                 .invalidateHttpSession(true)
                 .and()
                 .authorizeRequests()
-                .requestMatchers("/admin/progetti/**").authenticated()
-                .requestMatchers("/admin/skills/**").authenticated()
+                //.requestMatchers("/admin/progetti/**").authenticated()
+                //.requestMatchers("/admin/skills/**").authenticated()
+                .requestMatchers("/admin/progetti/**").hasRole("ADMIN")
+                .requestMatchers("/admin/skills/**").hasRole("ADMIN")
                 .requestMatchers("/").permitAll()
                 .and()
                 .httpBasic();
