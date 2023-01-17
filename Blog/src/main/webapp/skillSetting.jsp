@@ -33,7 +33,7 @@
 <div class="p-2">
     <fieldset>
         <legend>new skill form</legend>
-        <form action="/skills/insert" method="post">
+        <form action="/admin/skills/insert" method="post">
             <div>
                 <label for="name">Name :</label>
                 <input type="text" name="name" id="name" required>
@@ -59,7 +59,7 @@
 <div class="p-2">
     <fieldset>
         <legend>update skill form</legend>
-        <form action="/skills/update" method="post">
+        <form action="/admin/skills/update" method="post">
             <div>
                 <label for="id">Skill :</label>
                 <select name="id" id="id">

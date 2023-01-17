@@ -36,7 +36,7 @@
 <div class="p-2">
     <fieldset>
         <legend>new progetto form</legend>
-        <form action="/progetti/insert" method="post">
+        <form action="/admin/progetti/insert" method="post">
             <div>
                 <label for="name">Name :</label>
                 <input type="text" name="name" id="name" required>
@@ -58,7 +58,7 @@
 <div class="p-2">
     <fieldset>
         <legend>update progetto form</legend>
-        <form action="/progetti/update" method="post">
+        <form action="/admin/progetti/update" method="post">
             <div>
                 <label for="id">Skill :</label>
                 <select name="id" id="id">
